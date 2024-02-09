@@ -142,7 +142,7 @@ section {
     box-sizing: border-box;
     min-height: fit-content;
 }
-
+/*may not need the below line of code */
 .section-container {
     display: flex;
 }
@@ -162,20 +162,20 @@ section {
 
 }
 
-.profile-text {
+.section-text {
     align-self: center;
     text-align: center;
 }
 
-.profile-text p {
+.section-text p {
     font-weight: 600;
 }
 
-.profile-text-p1 {
+.section-text-p1 {
     text-align: center;
 }
 
-.profile-text-p2 {
+.section-text-p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -200,7 +200,7 @@ section {
 .btn-container {
     display: flex;
     justify-content: center;
-    gap:1rem;
+    gap: 1rem;    
 }
 
 .btn {
@@ -221,7 +221,7 @@ section {
 
 .btn-color-1, .btn-color-2:hover {
     background: darkgrey;
-    color: whitesmoke;
+    color: white;
 }
 
 .btn-color-1:hover {
@@ -240,4 +240,114 @@ section {
     gap: 1rem;
 }
 
+#about {
+    position: relative;
+}
 
+.about-containers {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-me-details-container {
+  justify-content: center;  
+  flex-direction: column;
+}
+
+.about-containers, .about-me-details-container {
+    display:flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border:grey 0.1rem solid;
+    border-color: gold;
+    text-align: center;
+}
+
+.about-me-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.about-me-pic-container {
+    height: 300px;
+    width: 300px;
+    margin: auto 0; 
+}
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: grey;
+    font-weight:600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;    
+}
+
+article .icon {
+    cursor: default;
+}
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: gold;
+    background: white;
+}
+
+.project-imgage {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: gold;
+}
