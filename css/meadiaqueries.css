@@ -6,23 +6,23 @@
         display: flex;
     }
 }
-
+/*
 @media screen and (min-width: 320px) and (max-width: 480px){
-    /* mobile devices */
+    /* mobile devices 
     body {
         background-color: tan;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
-    /* small ipads and small android tablets */
+    /* small ipads and small android tablets 
     body {
         background-color: teal;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
-    /* laptops and and small screens */
+    /* laptops and and small screens 
     body {
         background-color: orange;
     }
@@ -36,14 +36,14 @@
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px){
-    /* large screens and desktops */
+    /* large screens and desktops 
     body {
         background-color: green;
     }
 }
 
 @media screen and (min-width: 1201px) and (orientation: landscape){
-    /* large LCD screens and beyond */
+    /* large LCD screens and beyond 
     body {
         background-color: aqua;
     }
@@ -59,7 +59,7 @@ li {
     display: inline;
 }
 */
-
+/*
 ul {
     list-style-type: none;
     margin: 0;
@@ -83,3 +83,4 @@ li a {
         font-size: 15pt;
     }
 }
+*/
