@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="Contact us form">
+        <title>Contact Us Form</title>
+        <link rel="stylesheet" type="text/css" href="./css/form.css">
+        
+    </head>
+    <body>
+        <div class="container">
+
+          <div class="header">
+            <h1>CONTACT US &nbsp;</h1>
+            <h3>Fill out the form below to send Brian a message</h3>
+          </div>   
+          
+          <div class="form_body">              
+            <form id="contact_us" action="https://api.web3forms.com/submit" method="POST">                              
+              <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="First Last" required/>
+              </p>
+
+              <p>
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="firstlast@gmail.com" />
+              </p>
+                                
+              <label for="subject">Subject</label>
+              <input type="text" name="subject"/>
+
+              <label for="Message">Message</label>
+              <textarea cols="46" rows="3" name="Message:" placeholder="Message:" required></textarea>                  
+              <br> <br>
+                  
+              <input class="btn btn-submit" type="submit" value="Submit" />
+              <input type="hidden" name="apikey" value="074f62eb-eb05-47ad-b481-42c82aafb41d">
+                
+              
+              <input type="hidden" name="redirect" value="https://bmksimon.github.io/assignment-2/index.html">
+              <div class="h-captcha" data-captcha="true"></div>
+            </form>
+
+            <script src="https://web3forms.com/client/script.js" async defer></script>              
+
+          </div>
+            
+        </div>
+
+        <script>
+          const form = document.getElementById('contact_us');
+          
+          form.addEventListener('submit', function(e) {
+          
+              const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+          
+              if (!hCaptcha) {
+                  e.preventDefault();
+                  alert("Please fill out captcha field")
+                  return
+              }
+          });
+          </script>
+        
+    </body>
+</html>
