@@ -286,6 +286,7 @@ section {
 
 .about-me-pic-container {
     height: 300px;
+    display: flex;
     width: 300px;
     margin: auto 0; 
 }
@@ -372,7 +373,7 @@ article .icon {
 
 .contact-info-container {
     display: flex;
-    align-items: cemter;
+    align-items: center;
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
@@ -389,4 +390,10 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+#text-container {
+    display:flex;
+    ;
+
 }
